@@ -1,0 +1,45 @@
+/*бордовый #721a45
+тёмно-синий #0a141b
+морская волна #22688b
+серый #acb4bb
+светлый #f6efeb
+ */
+
+body
+{
+background-color:#f6efeb;
+}
+
+.text-center
+{
+    color: #721a45;
+    font-family: "Vampire Calligraphy";
+    font-size: 100pt;
+    margin: 60pt;
+}
+
+.nav-item nav-link active
+{
+    color: white
+}
+
+div{
+    color: #721a45;
+    font-size: 30pt;
+    font-family: 'Gill Sans'
+}
+
+li{
+    color: #721a45;
+    font-size: 30pt;
+    font-family: 'Gill Sans'
+}
+
+.info{
+    color: #22688b;
+    font-size: 20pt;
+    font-family: 'Gill Sans';
+    padding: 100pt;
+}
+
+

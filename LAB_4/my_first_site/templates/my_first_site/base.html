@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/welcom.css' %}">
+
+<nav class="navbar navbar-light bg-faded" style="background-color: #22688b;font-size: 30pt">
+  <div class="nav navbar-nav">
+    <a class="nav-item nav-link active" href="{% url 'my_first_site:welcome' %}" style="color: white; padding: 10pt; font-family: 'Gill Sans'">Домой <span class="sr-only">(current)</span></a>
+    <a class="nav-item nav-link" href="{% url 'my_first_site:flowers' %}" style="color: white">Наши цветы</a>
+  </div>
+</nav>
+
+
+
+{% block content %}{% endblock content %}
+
+</body>
+</html>

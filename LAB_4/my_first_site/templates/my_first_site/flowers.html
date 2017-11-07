@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flowers</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
+<body>
+{% extends "my_first_site/base.html" %}
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/welcom.css' %}">
+
+    {% for flower in flowers %}
+        <div>
+        {% include 'my_first_site/flower_element.html' with element=flower %}
+        </div>
+    {% empty %}
+        <li>К сожалению, список пуст:(</li>
+    {% endfor %}
+{% endblock %}
+</body>
+</html>

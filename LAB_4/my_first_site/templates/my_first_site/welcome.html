@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
+<body>
+{% extends "my_first_site/base.html" %}
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/welcom.css' %}">
+    <div class="text-center">Welcome!</div>
+
+
+    <div class="info">
+    Наш магазин цветов - это разнообразие букетов, цветов - охапок и подарков, которые нужно и можно дарить без повода и с
+        поводом: день рождения, юбилей, 8 марта, 1 сентября, новый год или свадьбы.
+
+</div>
+{% endblock content %}
+
+</body>
+</html>
